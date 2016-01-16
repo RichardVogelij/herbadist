@@ -133,7 +133,7 @@ input[type=checkbox]:checked ~ #menu{
     }
 }
 #main {
-    max-width: 760px;
+    max-width: 799px;
     margin: 0 auto;
 }
 
