@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Herbadist - De alles in één Administratietool voor Herbalife Distributers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+    <script src="files/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript">
+        
+        $(function(){
+            $("#header").load("header.html", function() { $("#content").removeClass("hidden"); }); 
+        });
+        $(function(){
+            $("#footer").load("footer.html"); 
+        });   
+
+    </script>
+</head>
+<body>
+    <script type=text/javascript>
+         $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open'))
+                {
+                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+                    $(this).closest('.faq').removeClass('open');
+                }
+                else
+                {
+                    var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                    //$('div[class*=faq_answer_container]').each(function(i) {  $(this).parent().removeClass('open'); $(this).animate({'height':'0'},100) })
+                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                    $('div[class*=faq_answer_container]').removeClass('open');
+                    $(this).closest('.faq').addClass('open');
+                }
+            });
+        });    
+    </script>
+    <style>
+    .faq_question {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .faq_answer_container {
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+    }
+    </style>        
+    
+    <div id="main">
+        <div id="header"></div>
+        <div class="hidden" id="content">
+            <div class="faqtext">Veelgestelde vragen</div>
+            <br /><br />
+            
+            
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question"><h2>Op welke besturingssystemen werkt Herbadist?</h2></div>
+                       <div class="faq_answer_container">
+                          <div class="faq_answer">
+                              Op dit moment werkt Herbadist alleen op Windows computers met versie Vista, 7, 8, 8.1 en 10. Dit komt in principe neer op alle versies na Windows XP. Er is geen ondersteuning gemaakt voor Windows XP omdat dit besturingssysteem niet meer door Microsoft wordt onderhouden en inmiddels sterk kwetsbaar is door virussen en beveiligingslekken. <br /><br />Afhankelijk van de vraag naar een Mac OSX versie gaan wij zorgen dat Herbadist ook voor Apple computers gaat werken. Uiteraard werkt Herbadist nu al wel als er (via Bootcamp) Windows op een Apple computer geinstalleerd wordt. Tevens ligt een cloudgebaseerde versie van Herbadist die volledig vanuit een webbrowser (en dus ook vanaf tablets e.d.) in de planning.
+                           </div>
+                       </div>        
+                </div>
+             </div>              
+            
+            
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question"><h2>Wat moet ik doen om Herbadist te kunnen gaan gebruiken?</h2></div>
+                       <div class="faq_answer_container">
+                          <div class="faq_answer">
+                              Op dit moment is er nog geen downloadlink om een installatieprogramma te downloaden waarmee Herbadist op uw computer kan worden geinstalleerd. Mocht u Herbalife willen gaan gebruiken/testen verzoeken wij u om contact met ons op te nemen via de contactpagina.
+                           </div>
+                       </div>        
+                </div>
+             </div>               
+
+            
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question"><h2>Waarom is Herbadist gemaakt?</h2></div>
+                       <div class="faq_answer_container">
+                          <div class="faq_answer">
+                              Herbadist is ontwikkeld door Richard Vogelij, de partner van een onafhankelijk Herbalife distributeuse en welzijnscoach. Aanvankelijk werden de inkopen, verkopen en voorraad op papier en later in excelbestanden bijgehouden. 
+                              
+                              Het viel ons op dat eigenlijk elke onafhankelijk Herbalife distributeur telkens eigen methodes bedenken om deze basisadministrartie bij te houden. Hierin komt telkens veel overeen maar zijn er ook veel verschillen. 
+                              <br /><br />
+                              Aangezien het bedrijfsmodel van onafhankelijk distributeurs hevig drijft op dupliceerbaarheid naar members/downliners bleek de wens naar een totaaloplossing waarmee alle vervelende administratietaken een stuk gemakkelijekr gaan worden. Zonder dat het direct noodzakelijk is een fiscaal adviseur of accountant in de arm te nemen. (Het wordt uiteraard wel aangeraden, indien er voldoende omzet is ontstaan, dit wel te doen om bepaalde subsidies en regelingen niet mis te lopen.)<br /><br />
+                              
+                              Nadat de basisfunctionaliteit klaar was zijn er in de loop van de tijd steeds meer functies gekomen om bijvoorbeeld belastingaangiftes gemakkelijk te kunnen doen, waardoor Herbadist inmiddels een volwassen programma is geworden met veel functionaliteit om diverse problemen op te lossen waar een distributeur mee te maken krijgt. Uiteraard is er veel tijd en zorg gaan zitten in het ontwikkelen van deze software, en is besloten om het professioneel uit te ontwikkelen tot een bruikbaar product voor elke onafhankelijk Herbalife distributeur in Nederland.
+                           </div>
+                       </div>        
+                </div>
+             </div>             
+            
+            
+            
+        </div>
+        <div id="footer"></div>
+    </div>    
+</body>
+</html>
