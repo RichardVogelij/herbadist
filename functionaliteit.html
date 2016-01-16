@@ -18,10 +18,74 @@
     </script>
 </head>
 <body>
+    <script type=text/javascript>
+         $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open')){
+                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+                    $(this).closest('.faq').removeClass('open');
+
+                    }else{
+                        var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                        $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                        $(this).closest('.faq').addClass('open');
+                    }
+            });
+
+        });    
+    </script>
+<style>
+    .faq_question {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .faq_answer_container {
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+    }
+</style>    
+    
     <div id="main">
         <div id="header"></div>
         <div class="hidden" id="content">
-            Hier komen de functies
+            
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question"><h2>Facturatie</h2></div>
+                       <div class="faq_answer_container1">
+                          <div class="faq_answer">Herbadist bevat een facturatiefunctie waarmee eenvoudig producten in een bestelling aan een klant gezet kunnen worden. Elke prijs is wijzigbaar en het is tevens mogelijk om uw klanten of members een korting te geven die is gebaseerd op de inkoopkortingen die Herbalife biedt. Uiteraard is het ook mogelijk om een eigen percentage korting te geven en kan er rekening gehouden worden met verzendkosten.pakketkosten. <br /><br />De gemaakte facturen worden direct in de interne boekhouding verwerkt waarbij direct inzichtelijk is welke facturen nog niet betald zijn en wat het totale openstaande factuurwaarde is. Zodra een betaling binnen is kan de factuur eenvoudig als betaald per (kas/bank/etc) gemarkeerd worden zodat uw boekhouding kloppend blijft.</div>
+                       </div>        
+                </div>
+             </div>
+            
+            
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question"><h2>Voorraadbeheer</h2></div>
+                       <div class="faq_answer_container1">
+                          <div class="faq_answer">Indien u ervoor kiest om inkoop-pakbonnen binnen herbadist te verwerken zal herbadist u te alle tijden een overzicht kunnen geven van de actuele voorraad en voorraadwaarde. Het is mogelijk om voorraad boekhoudkundig af te boeken onder diverse posten zoals promotie, derving etc. Uiteraard zorgt het maken van een factuur dat de voorraad correct wordt afgeboekt.</div>
+                       </div>        
+                </div>
+             </div>   
+            
+            <div class="faq_container">
+               <div class="faq">
+                  <div class="faq_question"><h2>Boekhouding</h2></div>
+                       <div class="faq_answer_container1">
+                          <div class="faq_answer">Herbadist bevat een simpele, maar krachtige, boekhoudmotor. Hierin kunnen alle boekhoudkundige handelingen voor een klein (ZZP) bedrijf geregeld worden op een zodanige manier dat er zeer weinig boekhoudkundige kennis nodig is. Herbadist regelt in feite alles automatisch, en zodra u een BTW aangifte of loonaangifte moet doen rollen de aantallen zo uit het proramma. Uiteraard kunt u de boekhoudfunctie ook 'dieper' gebruiken en ook brandstofkosten, bezoekjes aan LDW met bijkomende kosten, kantoorinventaris, etc. ook allemaal bijhouden in Herbadist voor een maximale BTW teruggave.</div>
+                       </div>        
+                </div>
+             </div>            
+            
+            
+            
         </div>
         <div id="footer"></div>
     </div>    
