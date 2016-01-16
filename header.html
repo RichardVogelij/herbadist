@@ -2,6 +2,7 @@
     $(document).ready(function () {
       var page = document.location.href.split('/').slice(-1)[0];
       page = page.split('.')[0];
+      page = page.split('_')[0];
       //alert(page);
       $('#'+page).addClass('active');
     });
@@ -15,16 +16,16 @@
     <ul id="menu">
         <li id="index"><a href="index.html">Nieuws</a></li>
         <li id="functies"><a href="functies.html">Functies</a></li>
-        <li>
+        <li id="screenshots">
             <a href="#">Screenshots &#65516;</a>
             <ul class="hidden">
-                <li><a href="#">Facturatie</a></li>
-                <li><a href="#">Voorraadbeheer</a></li>
-                <li><a href="#">Boekhouding</a></li>
+                <li><a href="screenshots_facturatie.html">Facturatie</a></li>
+                <li><a href="screenshots_voorraadbeheer.html">Voorraadbeheer</a></li>
+                <li><a href="screenshots_voorraadbeheer.html">Boekhouding</a></li>
             </ul>
         </li>
-        <li><a href="#">Prijs</a></li>
-        <li><a href="#">Contact</a></li>
+        <li id="prijs"><a href="prijs.html">Prijs</a></li>
+        <li id="contact"><a href="contact.html">Contact</a></li>
     </ul>
     <div class="clr"></div>
     <div id="navmenulowerbar"></div>
