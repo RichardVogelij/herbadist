@@ -1,0 +1,31 @@
+<script type=text/javascript>
+    $(document).ready(function () {
+      var page = document.location.href.split('/').slice(-1)[0];
+      page = page.split('.')[0];
+      //alert(page);
+      $('#'+page).addClass('active');
+    });
+</script>
+<img src="files/logo_website.png" width="250">
+<h1>Herbadist - Dè alles in één administratietool voor Herbalife Distributeurs</h1>
+<div id="navmenu">
+    <label for="show-menu" class="show-menu">Toon menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+
+    <ul id="menu">
+        <li id="index"><a href="index.html">Nieuws</a></li>
+        <li id="functies"><a href="functies.html">Functies</a></li>
+        <li>
+            <a href="#">Screenshots &#65516;</a>
+            <ul class="hidden">
+                <li><a href="#">Facturatie</a></li>
+                <li><a href="#">Voorraadbeheer</a></li>
+                <li><a href="#">Boekhouding</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Prijs</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="clr"></div>
+    <div id="navmenulowerbar"></div>
+</div>
