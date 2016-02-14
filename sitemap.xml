@@ -6,16 +6,14 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
-    <url><loc>http://www.herbadist.nl/</loc>
-    <url><loc>http://www.herbadist.nl/index.html</loc>
-    <url><loc>http://www.herbadist.nl/faq.html</loc>
-    <url><loc>http://www.herbadist.nl/prijs.html</loc>
-    <url><loc>http://www.herbadist.nl/screenshots_boekhouding.html</loc>
-    <url><loc>http://www.herbadist.nl/screenshots_facturatie.html</loc>
-    <url><loc>http://www.herbadist.nl/screenshots_voorraadbeheer.html</loc>
-    <url><loc>http://www.herbadist.nl/functionaliteit.html</loc>
-
-</url>
+    <url><loc>http://www.herbadist.nl/</loc></url>
+    <url><loc>http://www.herbadist.nl/index.html</loc></url>
+    <url><loc>http://www.herbadist.nl/faq.html</loc></url>
+    <url><loc>http://www.herbadist.nl/prijs.html</loc></url>
+    <url><loc>http://www.herbadist.nl/screenshots_boekhouding.html</loc></url>
+    <url><loc>http://www.herbadist.nl/screenshots_facturatie.html</loc></url>
+    <url><loc>http://www.herbadist.nl/screenshots_voorraadbeheer.html</loc></url>
+    <url><loc>http://www.herbadist.nl/functionaliteit.html</loc></url>
 
 
 
